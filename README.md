@@ -1,16 +1,16 @@
-# Django Markdown Editor
+# Django Markdown Editor Next
 
-A feature-rich Markdown editor for Django admin with real-time preview, image uploads, and customizable toolbar.
+An advanced Markdown editor for Django admin with real-time preview, image uploads, and customizable toolbar. This package extends and improves upon existing Django Markdown editors.
 
 ## Installation
 
 ```bash
-pip install django-markdown-editor
+pip install django-markdown-editor-next
 ```
 
 ## Setup
 
-1. Add 'django_markdown_editor' to your INSTALLED_APPS setting.
+1. Add 'django_markdown_editor_next' to your INSTALLED_APPS setting.
 
 2. Add the following to your project's urls.py:
 
@@ -19,7 +19,7 @@ pip install django-markdown-editor
 
    urlpatterns = [
        # ... your other url patterns
-       path('markdown-editor/', include('django_markdown_editor.urls')),
+       path('markdown-editor-next/', include('django_markdown_editor_next.urls')),
    ]
    ```
 
@@ -33,7 +33,7 @@ pip install django-markdown-editor
 4. In your models, use the MarkdownField:
 
    ```python
-   from django_markdown_editor.fields import MarkdownField
+   from django_markdown_editor_next.fields import MarkdownField
 
    class MyModel(models.Model):
        content = MarkdownField()
@@ -42,9 +42,11 @@ pip install django-markdown-editor
 ## Features
 
 - Real-time Markdown preview
-- Image uploads
+- Image uploads with drag-and-drop support
 - Customizable toolbar
 - Keyboard shortcuts
+- Syntax highlighting for code blocks
+- Emoji picker
 
 ## Customizing the Toolbar
 
@@ -57,7 +59,8 @@ content = MarkdownField(
         {'action': 'italic', 'icon': 'fas fa-italic', 'title': 'Italic'},
         {'action': 'link', 'icon': 'fas fa-link', 'title': 'Link'},
         {'action': 'image', 'icon': 'fas fa-image', 'title': 'Image'},
-        {'action': 'preview', 'icon': 'fas fa-eye', 'title': 'Toggle Preview'}
+        {'action': 'preview', 'icon': 'fas fa-eye', 'title': 'Toggle Preview'},
+        {'action': 'emoji', 'icon': 'fas fa-smile', 'title': 'Insert Emoji'}
     ]
 )
 ```
@@ -67,6 +70,11 @@ content = MarkdownField(
 - Ctrl/Cmd + B: Bold
 - Ctrl/Cmd + I: Italic
 - Ctrl/Cmd + K: Insert Link
+- Ctrl/Cmd + Shift + C: Insert Code Block
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 

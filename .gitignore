@@ -1,6 +1,6 @@
 build
 dist
-django-markdown-editor-next_next.egg-info
+django_markdown_editor_next_next.egg-info
 venv
 ./setup.py
 setup.py

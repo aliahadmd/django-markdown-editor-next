@@ -1,4 +1,4 @@
-# django-markdown-editor-next/fields.py
+# django_markdown_editor_next/fields.py
 from django.db import models
 from .widgets import MarkdownEditorWidget
 
