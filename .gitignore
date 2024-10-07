@@ -1,0 +1,7 @@
+build
+dist
+django_markdown_editor_next.egg-info
+venv
+./setup.py
+setup.py
+/setup.py
